@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  
+    <head>
+        <title>{Dis}Ability in AI</title>
+        <div id="logo">
+            <img src="logo.jpg" width=100%; height=20%>
+        </div>
+        <link rel="stylesheet" type="text/css" href="DAI.css">
+        <meta name="keywords" content="Disability, AI, Artificial Intelligence, NeurIPS, ICML, ICLR, machine learning, data science">
+        <meta name="author" content="{Dis}Ability in AI">
+        <title> Home | {Dis}Ability in AI</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /> 
+        <meta name="HandheldFriendly" content="True" />
+    </head>
+                
+                
+                
+    <script>
+        function show(element) {
+          if (typeof(element) != "object")	{
+            element = document.getElementById(element);
+          }
+          
+          if (typeof(element) == "object") {
+            element.style.display = '';
+          }
+        }
+  
+        function hide(element) {
+          if (typeof(element) != "object")	{
+            element = document.getElementById(element);
+          }
+          
+          if (typeof(element) == "object") {
+            element.style.display = 'none';
+          }
+        }
+  
+        function show_content(optionsId) {
+          var ids = new Array('home','about','activities','contact');
+          show(optionsId);
+          document.getElementById(optionsId + '_link').className = 'active';
+          
+          for (var i = 0; i < ids.length; i++)
+          {
+            if (ids[i] == optionsId) continue;
+            hide(ids[i]);
+            document.getElementById(ids[i] + '_link').className = '';
+           }
+         }
+      </script>
+                
+                
+                
+ <!----    Main body     -----------> 
+    <body>
+        <h1> {Dis}Ability in AI </h1>
+                    
+        <div id="menu">
+            <a id="home_link" href="#" class="active" 
+            onmouseover="show_content('home'); return false;">Home</a> 
+            <a id="about_link" href="#"
+            onmouseover="show_content('about'); return false;">About</a>
+            <a id="activities_link" href="#" 
+            onmouseover="show_content('activities'); return false;">Activities</a>
+            <a id="contact_link" href="#" 
+            onmouseover="show_content('contact');  return false;">Contact</a>
+        </div>
+                        
+        <br><br>
+                      
+                    
+            
+        <!----------- Home -------------------------------------->
+        <div id="home" style="display: block">
+
+      
+        </div>
+          
+          
+          <!--------------------About -------------------------->
+          
+          <div id="about" style="display: none">
+          
+          <b>Our Vision</b>:  
+          <br>
+          Equal participation for all
+          <br><br>
+        
+          <b> What do we mean by the term disabled people </b>:  
+          <br>
+          The term disabled people is used to include all those who experience barriers in accessing education due to having or being   considered to have an impairment. This includes
+          <ul>
+          <li> people with physical or sensory impairments  </li>
+          <li> people with specific learning difficulties (such as dyslexia, dyspraxia or AD(H)D)  </li>
+          <li> people with mental health conditions (such as anxiety and depression) </li>
+          <li> people with autism spectrum conditions</li>
+          </ul>	
+          
+          <br> <br>
+          
+          </div>
+
+
+          
+          <!---------- Activities -------------->
+          
+          <div id="activities" style="display: none">
+          
+          <b> Action points: </b> 
+          <br> <br> 	
+          <ol>
+          <li> advocate for disabled people; </li>
+          <li> host mentoring sessions during conferences; </li>
+          <li> escort an attendee to the front row of any of the sessions or workshops; </li>
+          <li> have volunteers to assist during poster sessions - to get them closer to the poster or to provide a chair if
+needed for the presenter, etc;</li>
+          </ol>	
+          <br> <br> <br> 
+          </div>
+          
+          <!----------Contact -------------->
+          
+          <div id="contact" style="display: none">
+          
+          <p class="cal"> You can contact us at </p>
+          <ul>
+          <li> <a href="disability.in.AI@gmail.com">Disability in AI</a> </li>  
+          <li> <a href="meperry@salk.edu">Mary Ellen Perry</a> </li>  
+          </ul>
+          </div>
+          
+    </body>
+</html>
+          
+          
