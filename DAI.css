@@ -38,6 +38,7 @@ p.calsc
 
 #home {
 font-family:"Times New Roman";
+width: 100%;
 margin-top: 10%;
 margin-left: 20%;
 }
@@ -81,6 +82,24 @@ margin-left: 10%;
   margin-left: 10%;
 }
 
+#guide
+{
+  font-family:"Times New Roman";
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+#guide a.link {color:#000000;}   
+#guide a.visited {color:#808080;}
+
+
+#guide li
+{
+  font-family:"Times New Roman";
+  margin-left: 10%;
+}
+
+
 
 #contact 
 {
@@ -108,4 +127,9 @@ margin-left: 10%;
 {
   float:right;
   margin-left: 85%;
+}
+
+#stick
+{
+  float:center;
 }
